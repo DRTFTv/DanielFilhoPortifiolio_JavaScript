@@ -150,8 +150,12 @@ html {
         border-radius: 7.5vh;
         fill: transparent;
         filter: blur(5vh);
+        cursor: pointer;
     
         /*grid*/
+
+        /*animation*/
+        animation: arrowDownAnimation 1s alternate infinite;
     }
 
     .title:hover .arrowDown{
@@ -169,29 +173,16 @@ html {
     .socialLinks {
         /*size - position*/
         position: absolute;
+        width: 15vh;
         right: 1vh;
 
         /*style*/
- 
+
         /*grid*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .socialLinks:hover {
-        /*size - position*/
-        width: 15vh;
-        right: 0vh;
-
-        /*style*/
-        border-top-left-radius: 2.5vh;
-        border-bottom-left-radius: 2.5vh;
-        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.25);
-        background-color: var(--secondary-color);
-    
-        /*grid*/
     }
 
     .socialLinkIcon {
@@ -305,5 +296,14 @@ html {
         /*style*/
 
         /*grid*/
+    }
+}
+
+@keyframes arrowDownAnimation {
+    to {
+        transform: translateY(-.5vh);
+    }
+    from {
+        transform: translateY(.5vh);
     }
 }
