@@ -4,7 +4,7 @@
     padding: 0;
 
     /*style*/
-    transition: .5s;
+    transition: .75s ease;
     font-size: 2.5vh;
     font-family: Impact, 'Arial Narrow Bold';
     color: var(--text-color);
@@ -58,6 +58,9 @@ html {
     
         /*style*/
         overflow-y: scroll;
+        border-radius: 2.5vh;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.25);
+        background-color: var(--first-color);
     
         /*grid*/
         display: flex;
@@ -65,6 +68,10 @@ html {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .scrollBox:hover {
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.50);
     }
 
     .boxOrange {
@@ -79,7 +86,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
     }
     
     .boxWhite {
@@ -94,7 +101,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .title {
@@ -126,11 +133,10 @@ html {
     
         /*style*/
         color: transparent;
-        letter-spacing: 2.5vh;
-        filter: blur(2vh);
+        letter-spacing: 5vh;
+        filter: blur(5vh);
 
         /*grid*/
-    
     }
 
     .arrowDown {
@@ -142,7 +148,8 @@ html {
 
         /*style*/
         border-radius: 7.5vh;
-        fill: var(--text-color);
+        fill: transparent;
+        filter: blur(5vh);
     
         /*grid*/
     }
@@ -152,7 +159,10 @@ html {
         
         /*style*/
         display: block;
-    
+        fill: var(--text-color);
+        filter: blur(0vh);
+        backdrop-filter: blur(.5vh);
+        
         /*grid*/
     }
 
@@ -162,12 +172,26 @@ html {
         right: 1vh;
 
         /*style*/
-    
+ 
         /*grid*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .socialLinks:hover {
+        /*size - position*/
+        width: 15vh;
+        right: 0vh;
+
+        /*style*/
+        border-top-left-radius: 2.5vh;
+        border-bottom-left-radius: 2.5vh;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.25);
+        background-color: var(--secondary-color);
+    
+        /*grid*/
     }
 
     .socialLinkIcon {
@@ -177,6 +201,16 @@ html {
 
         /*style*/
         fill: var(--text-color);
+    
+        /*grid*/
+    }
+
+    .socialLinkIcon:hover {
+        /*size - position*/
+        width: 5vh;
+        height: 5vh;
+
+        /*style*/
     
         /*grid*/
     }
