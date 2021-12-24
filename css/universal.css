@@ -8,6 +8,7 @@
     font-size: 2.5vh;
     font-family: Impact, 'Arial Narrow Bold';
     color: var(--text-color);
+    text-transform: uppercase;
 
     /*grid*/
 
@@ -179,9 +180,29 @@ html {
     
         /*grid*/
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        /*animation*/
+        animation: centerAnimation 1s alternate infinite;
+    }
+
+    .center div, .center a {
+        /*size - position*/
+        width: 50%;
+        margin-top: 2vh;
+        padding: .5vh;
+        
+        /*style*/
+        color: var(--text-color);
+        background-color: var(--secondary-color); 
+        border-radius: 2.5vh;
+        font-size: 2.5vh;
+        text-align: center;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    
+        /*grid*/
     }
 
     .profileImg {
@@ -191,12 +212,18 @@ html {
     
         /*style*/
         border-radius: 25vh;
-        text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
     
         /*grid*/
+    }
 
-        /*animation*/
-        animation: profileImgAnimation 1s alternate infinite;
+    .alert {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+    
+        /*grid*/
     }
 
     .content1 {
@@ -209,7 +236,7 @@ html {
         font-size: 2.5vh;
 
         /*grid*/
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -245,7 +272,7 @@ html {
         text-decoration: none;
         
         /*grid*/
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -278,7 +305,7 @@ html {
 
     .card {
         /*size - position*/
-        height: 2.5vh;
+        height: 3vh;
         margin: .5vh;
     
         /*style*/
@@ -326,7 +353,266 @@ html {
 }
 
 @media (max-width: 1025px) {
+    .scrollBox{
+        /*size - position*/
+        width: 95%;
+        height: 90%;
     
+        /*style*/
+        overflow-y: scroll;
+        border-radius: 2.5vh;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.25);
+        background-color: var(--first-color);
+    
+        /*grid*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scrollBox:hover {
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    }
+
+    .boxOrange {
+        /*size - position*/
+        width: 50%;
+        height: 100%;
+    
+        /*style*/
+        background-color: var(--first-color);
+    
+        /*grid*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxWhite {
+        /*size - position*/
+        width: 50%;
+        height: 100%;
+    
+        /*style*/
+        background-color: var(--secondary-color);
+    
+        /*grid*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        /*size - position*/
+        position: absolute;
+        margin: 2.5vh;
+    
+        /*style*/
+    
+        /*grid*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title label {
+        /*size - position*/
+
+        /*style*/
+        font-size: 5vh;
+        text-align: center;
+    
+        /*grid*/
+    }
+    
+    .title:hover label{
+        /*size - position*/
+    
+        /*style*/
+        letter-spacing: 2.5vh;
+
+        /*grid*/
+    }
+
+    .arrowDown {
+        /*size - position*/
+        position: absolute;
+        display: flex;
+        width: 5vh;
+        height: 5vh;
+        margin-top: 25vh;
+
+        /*style*/
+        border-radius: 7.5vh;
+        cursor: pointer;
+        fill: var(--text-color);
+        filter: blur(0vh);
+        backdrop-filter: blur(.5vh);
+    
+        /*grid*/
+
+        /*animation*/
+        animation: arrowDownAnimation 1s alternate infinite;
+    }
+
+    .center {
+        /*size - position*/
+        position: absolute;
+        margin: 2.5vh;
+    
+        /*style*/
+    
+        /*grid*/
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /*animation*/
+        animation: centerAnimation 1s alternate infinite;
+    }
+
+    .center div, .center a {
+        /*size - position*/
+        width: 50%;
+        margin-top: 2vh;
+        padding: .5vh;
+        
+        /*style*/
+        color: var(--text-color);
+        background-color: var(--secondary-color); 
+        border-radius: 2.5vh;
+        font-size: 2.5vh;
+        text-align: center;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    
+        /*grid*/
+    }
+
+    .profileImg {
+        /*size - position*/
+        width: 25vh;
+        height: 25vh;
+    
+        /*style*/
+        border-radius: 25vh;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    
+        /*grid*/
+    }
+
+    .alert {
+        /*size - position*/
+        display: flex;
+
+        /*style*/
+    
+        /*grid*/
+    }
+
+    .content1 {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+
+        /*grid*/
+    }
+
+    .content1 div {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+
+        /*grid*/
+    }
+
+    .banner {
+        /*size - position*/
+        display: none;
+    
+        /*style*/
+    
+        /*grid*/
+    }
+
+    .content2 {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+        
+        /*grid*/
+    }
+
+    .content2 label {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+
+        /*grid*/
+    }
+
+    .content2 div {
+        /*size - position*/
+        display: none;
+
+        /*style*/
+
+        /*grid*/
+    }
+
+    .card {
+        /*size - position*/
+        display: none;
+    
+        /*style*/
+
+        /*grid*/
+    }
+
+    .socialLinks {
+        /*size - position*/
+        position: absolute;
+        width: 5vh;
+        right: 2.5vh;
+
+        /*style*/
+
+        /*grid*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialLinkIcon {
+        /*size - position*/
+        width: 2.5vh;
+        height: 2.5vh;
+
+        /*style*/
+        fill: var(--text-color);
+    
+        /*grid*/
+    }
+
+    .socialLinkIcon:hover {
+        /*size - position*/
+        width: 5vh;
+        height: 5vh;
+
+        /*style*/
+    
+        /*grid*/
+    }
 }
 
 @keyframes arrowDownAnimation {
@@ -338,7 +624,7 @@ html {
     }
 }
 
-@keyframes profileImgAnimation {
+@keyframes centerAnimation {
     to {
         transform: translateY(-.25vh);
     }
