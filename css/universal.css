@@ -71,7 +71,7 @@ html {
     }
 
     .scrollBox:hover {
-        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.50);
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
     }
 
     .boxOrange {
@@ -170,6 +170,111 @@ html {
         /*grid*/
     }
 
+    .center {
+        /*size - position*/
+        position: absolute;
+        margin: 2.5vh;
+    
+        /*style*/
+    
+        /*grid*/
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profileImg {
+        /*size - position*/
+        width: 25vh;
+        height: 25vh;
+    
+        /*style*/
+        border-radius: 25vh;
+        text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    
+        /*grid*/
+    }
+
+    .content1 {
+        /*size - position*/
+        width: 75%;
+        height: 75%;
+
+        /*style*/
+        text-decoration: none;
+        font-size: 5vh;
+
+        /*grid*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        /*size - position*/
+        height: 20vh;
+    
+        /*style*/
+        border-radius: 2.5vh;
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    
+        /*grid*/
+    }
+
+    .content2 {
+        /*size - position*/
+        width: 75%;
+        height: 75%;
+
+        /*style*/
+        text-decoration: none;
+        
+        /*grid*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content2 label {
+        /*size - position*/
+
+        /*style*/
+        font-size: 5vh;
+        color: var(--secondary-color);
+        text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+
+        /*grid*/
+    }
+
+    .content2 div {
+        /*size - position*/
+        width: 50%;
+
+        /*style*/
+
+        /*grid*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card {
+        /*size - position*/
+        height: 2.5vh;
+        margin: .5vh;
+    
+        /*style*/
+        box-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+        border-radius: 2.5vh;
+
+        /*grid*/
+    }
+
     .socialLinks {
         /*size - position*/
         position: absolute;
@@ -208,95 +313,7 @@ html {
 }
 
 @media (max-width: 1025px) {
-    .scrollBox{
-        /*size - position*/
-        width: 100%;
-        height: 100%;
     
-        /*style*/
-        overflow-y: scroll;
-    
-        /*grid*/
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .boxOrange {
-        /*size - position*/
-        width: 50%;
-        height: 100%;
-    
-        /*style*/
-        background-color: var(--first-color);
-    
-        /*grid*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .boxWhite {
-        /*size - position*/
-        width: 50%;
-        height: 100%;
-    
-        /*style*/
-        background-color: var(--secondary-color);
-    
-        /*grid*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title {
-        /*size - position*/
-        position: absolute;
-        margin: 2.5vh;
-        top: 0;
-    
-        /*style*/
-    
-        /*grid*/
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title label {
-        /*size - position*/
-    
-        /*style*/
-        font-size: 10vh;
-        text-align: center;
-    
-        /*grid*/
-    }
-    
-    .title:hover label{
-        /*size - position*/
-    
-        /*style*/
-        letter-spacing: 2.5vh;
-
-        /*grid*/
-    
-    }
-
-    .arrowDown {
-        /*size - position*/
-        display: none;
-
-        /*style*/
-
-        /*grid*/
-    }
 }
 
 @keyframes arrowDownAnimation {
