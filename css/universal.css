@@ -194,6 +194,9 @@ html {
         text-shadow: 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
     
         /*grid*/
+
+        /*animation*/
+        animation: profileImgAnimation 1s alternate infinite;
     }
 
     .content1 {
@@ -203,13 +206,23 @@ html {
 
         /*style*/
         text-decoration: none;
-        font-size: 5vh;
+        font-size: 2.5vh;
 
         /*grid*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .content1 div {
+        /*size - position*/
+        margin: 2.5vh;
+
+        /*style*/
+        font-size: 2.5vh;
+
+        /*grid*/
     }
 
     .banner {
@@ -322,5 +335,14 @@ html {
     }
     from {
         transform: translateY(.5vh);
+    }
+}
+
+@keyframes profileImgAnimation {
+    to {
+        transform: translateY(-.25vh);
+    }
+    from {
+        transform: translateY(.25vh);
     }
 }
