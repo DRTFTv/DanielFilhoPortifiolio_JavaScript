@@ -3,7 +3,6 @@ window.onresize = Show;
 document.getElementById("scrollBox").onscroll = Show;
 
 function Show() {
-    console.log("Show");
     let scrollBox = document.getElementById("scrollBox");
     let v = parseInt(100 * scrollBox.scrollTop / (scrollBox.scrollHeight - scrollBox.clientHeight));
 
